@@ -10,7 +10,8 @@ install:
   - ps: Install-Product node $env:nodejs_version
   # install modules
   - npm install
-  - npm install mocha-appveyor-reporter
+  - npm install --save-dev appveyor-mocha
+  - npm install --save-dev mocha-appveyor-reporter
   - echo --reporter mocha-appveyor-reporter >> test/mocha.opts
 
 
