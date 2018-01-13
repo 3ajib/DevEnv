@@ -11,6 +11,8 @@ install:
   # install modules
   - npm install
   - npm install mocha-appveyor-reporter
+  - echo --reporter mocha-appveyor-reporter >> test/mocha.opts
+
 
 
 # Post-install test scripts.
